@@ -1,0 +1,4 @@
+---
+import Badges from './Badges.astro'; const {entry}=Astro.props;
+---
+<article class="card" data-card data-title={entry.title} data-category={entry.category} data-difficulty={entry.difficulty} data-type={entry.type} data-search={[entry.title,entry.category,entry.shortDefinition,entry.type,...entry.keywords,...entry.relatedTerms].join(' ')}><Badges category={entry.category} difficulty={entry.difficulty} type={entry.type}/><h2><a href={`/dicionario/${entry.slug}`}>{entry.title}</a></h2><p>{entry.shortDefinition}</p><p class="utility">→ {entry.utility}</p></article>

@@ -1,0 +1,4 @@
+---
+const {action='/dicionario',label='Buscar no dicionário'}=Astro.props;
+---
+<form class="search" action={action}><label for="busca">{label}</label><div><input id="busca" name="q" type="search" placeholder="Ex.: grid, camadas ou responsividade" autocomplete="off"><button>Buscar</button></div></form>

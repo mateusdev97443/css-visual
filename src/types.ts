@@ -1,0 +1,3 @@
+export type Difficulty = 'Intermediário' | 'Avançado' | 'Especialista';
+export type EntryType = 'Conceito' | 'Propriedade' | 'Função' | 'Regra' | 'Técnica';
+export type DictionaryEntry = { id:string; slug:string; title:string; shortDefinition:string; category:string; difficulty:Difficulty; type:EntryType; keywords:string[]; utility:string; masterExplanation:string; syntax:string; htmlExample:string; cssExample:string; visualDescription:string; stepByStep:string[]; whenToUse:string[]; whenToAvoid:string[]; commonMistake:string; solution:string; professionalTip:string; accessibilityNote:string; performanceNote:string; limitations:string[]; relatedTerms:string[]; finalSummary:string; };
